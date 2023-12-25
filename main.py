@@ -68,6 +68,7 @@ if response.status_code == 200:
     # 删除压缩文件
     os.remove(release_name)
 
+    os.system("./clash_meta")
     print("Done!")
 else:
     # 如果状态码不是200，表示出错了，打印出错误信息
